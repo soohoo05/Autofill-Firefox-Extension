@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Autofill",
+  "version": "1.0",
+
+  "description": "Description here.",
+
+  "icons": {
+    "48": "icons/pap.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["autofill.js"]
+    }
+  ],
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "permissions": ["storage"],
+
+  "applications": {
+    "gecko": {
+      "id": "addon@example.com"
+    }
+  }
+
+
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <form id="application_form" enctype="multipart/form-data">
+        <label>Gender</label>
+        <select name="job_application[gender]" id="job_application_gender" tabindex="-1" class="select2-offscreen">
+            <option value="">Please select</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Decline To Self Identify</option>
+        </select>
+        <br/>
+        <label>Are you Hispanic/Latino?</label>
+        <select name="job_application[hispanic_ethnicity]" id="job_application_hispanic_ethnicity" tabindex="-1" class="select2-offscreen">
+            <option value="">Please select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Decline To Self Identify">Decline To Self Identify</option>
+        </select>
+        <br/>
+
+        <label>Please identify your race</label>
+        <select name="job_application[race]" id="job_application_race" tabindex="-1" class="select2-offscreen">
+            <option value="">Please select</option>
+            <option value="1">American Indian or Alaskan Native</option>
+            <option value="2">Asian</option>
+            <option value="3">Black or African American</option>
+            <option value="4">Hispanic or Latino</option>
+            <option value="5">White</option>
+            <option value="6">Native Hawaiian or Other Pacific Islander</option>
+            <option value="7">Two or More Races</option>
+            <option value="8">Decline To Self Identify</option>
+        </select>
+        <br/>
+
+        <label>Veteran status</label>
+        <select name="job_application[veteran_status]" id="job_application_veteran_status" tabindex="-1" class="select2-offscreen">
+            <option value="">Please select</option>
+            <option value="1">I am not a protected veteran</option>
+            <option value="2">I identify as one or more of the classifications of a protected veteran</option>
+            <option value="3">I don't wish to answer</option>
+        </select>
+        <br/>
+
+        <label>Disability status</label>
+        <select name="job_application[disability_status]" id="job_application_disability_status" tabindex="-1" class="select2-offscreen">
+            <option value="">Please select</option>
+            <option value="1">Yes, I have a disability (or previously had a disability)</option>
+            <option value="2">No, I don't have a disability</option>
+            <option value="3">I don't wish to answer</option>
+        </select>
+        <br/>
+        
+        <button type="submit">Save</button>
+    </form>
+
+    <script src="options.js"></script>
+
+</body>
+
+</html>
